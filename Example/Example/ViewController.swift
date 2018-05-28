@@ -42,6 +42,9 @@ class HomeViewController : FormViewController {
             Section() {
                 $0.header = HeaderFooterView<EurekaLogoView>(.class)
             }
+            <<< ImageRow() { row in
+                row.title = "Image Row"
+            }
             <<< ButtonDetailsRow() { row in
                  row.title = "ButtonDetailsRow"
                  row.value = "value"
