@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AD7758D20BBA5C300F4652E /* ButtonDetailsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7758C20BBA5C300F4652E /* ButtonDetailsRow.swift */; };
 		280FBE5D1D87360900900064 /* RuleRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FBE5C1D87360900900064 /* RuleRange.swift */; };
 		280FBE5F1D873CCE00900064 /* RuleClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FBE5E1D873CCE00900064 /* RuleClosure.swift */; };
 		2859CD951C7CF1FD0002982F /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859CD921C7CF1FD0002982F /* Core.swift */; };
@@ -106,6 +107,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AD7758C20BBA5C300F4652E /* ButtonDetailsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDetailsRow.swift; sourceTree = "<group>"; };
 		280FBE5C1D87360900900064 /* RuleRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RuleRange.swift; path = Source/Validations/RuleRange.swift; sourceTree = SOURCE_ROOT; };
 		280FBE5E1D873CCE00900064 /* RuleClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RuleClosure.swift; path = Source/Validations/RuleClosure.swift; sourceTree = SOURCE_ROOT; };
 		2859CD921C7CF1FD0002982F /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Core.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -275,6 +277,7 @@
 				2859CDAC1C7D0BCA0002982F /* TextAreaRow.swift */,
 				8FCCF92420A4794B004793A0 /* TriplePickerInputRow.swift */,
 				8FCCF8F020A32613004793A0 /* TriplePickerRow.swift */,
+				0AD7758C20BBA5C300F4652E /* ButtonDetailsRow.swift */,
 			);
 			name = Rows;
 			path = Source/Rows;
@@ -556,6 +559,7 @@
 				28EEC00C1C7E396000300699 /* SelectorRow.swift in Sources */,
 				280FBE5D1D87360900900064 /* RuleRange.swift in Sources */,
 				28EEC0161C7E3A3200300699 /* ListCheckRow.swift in Sources */,
+				0AD7758D20BBA5C300F4652E /* ButtonDetailsRow.swift in Sources */,
 				28EEC01D1C7E3A8600300699 /* SliderRow.swift in Sources */,
 				28EEC00B1C7E395700300699 /* OptionsRow.swift in Sources */,
 				28EEC0021C7E37BD00300699 /* ButtonRow.swift in Sources */,
