@@ -25,6 +25,16 @@
 import UIKit
 import Eureka
 
+
+final class FriendViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationItem.title = "myFriend"
+        view.backgroundColor = .gray
+    }
+}
+
 //MARK: HomeViewController
 
 class HomeViewController : FormViewController {
@@ -45,6 +55,23 @@ class HomeViewController : FormViewController {
             <<< ImageRow() { row in
                 row.title = "Image Row"
             }
+            <<< ViewRow<UIView>("view")
+                .cellSetup { (cell, row) in
+                    //  Construct the view for the cell
+                    cell.view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
+                    cell.view?.backgroundColor = UIColor.orange
+                    //  Make the image view occupy the entire row:
+                    cell.viewRightMargin = 0.0
+                    cell.viewLeftMargin = 0.0
+                    cell.viewTopMargin = 0.0
+                    cell.viewBottomMargin = 0.0
+                    
+                    row.presentationMode = .show(
+                        controllerProvider: .callback(builder: { () -> UIViewController in
+                            return FriendViewController()
+                        }), onDismiss: nil)
+                    
+                }
             <<< ButtonDetailsRow() { row in
                  row.title = "ButtonDetailsRow"
                  row.value = "value"
